@@ -1,0 +1,33 @@
+<%- include('partials/header'); %>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/css/getName.css" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app</noscript>
+    <h1 class="heading">Simon Game</h1>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <form id="getName" action='/' method="post">
+      <input type="text" id="name" name="nickName" placeholder="Enter your Nickname" autocomplete="off">
+      <button type="submit" id="send">START</button>
+    </form>
+    <div class="leaderboard-container">
+      <h1 class="leaderboard-heading">Leaderboard</h1>
+      <% leaders.map(({name, score}, id) => { %>
+        <div class="card">
+          <h1>#<%= id+1 %></h1>
+          <h2><%= name %></h2>
+          <h3><%= score %></h3>
+        </div>
+      <% }); %>
+    </div>
+    <footer>© Silver <%= new Date().getFullYear() %></footer>
+    <script>
+      document.getElementById('send').onclick = function(event) {
+        if (document.getElementById('name').value.length)
+          document.getElementById('getName').submit();
+        else
+          event.preventDefault();}
+    </script>
+<%- include('partials/footer'); %>

@@ -1,0 +1,108 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #222831;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(25,25,25,0.5), rgba(25,25,25,0.5) 100px, transparent 0px, transparent 200px),
+    repeating-linear-gradient(-45deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3) 100px, transparent 0px, transparent 200px);
+  overflow: hidden;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "Karma Future";
+  src: url("/assets/fonts/karma-future.ttf") format("truetype"),
+       url("/assets/fonts/karma-future.otf") format("opentype");
+  font-display: swap;
+}
+
+.heading {
+  display: block;
+  margin: 25px auto;
+  color: #eaeaea;
+  text-align: center;
+  font-family: "Karma Future", cursive, serif;
+  font-weight: normal;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 2.5px 0;
+  background: #252525;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 12px;
+}
+
+.game {
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+.game h1 {
+  margin: 0 auto;
+  font-family: 'Acme', cursive;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+#level-title {
+  margin: 10px auto;
+  font-family: 'Play', sans-serif;
+  font-size: 25px;
+}
+
+.game button {
+  display: block;
+  margin: 10px auto;
+  padding: 7.5px 15px;
+  background: transparent;
+  border: 5px inset white;
+  outline: none;
+  color: white;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+}
+
+.game button:hover {background-color: #444;}
+
+.game button:active {background-color: #333;}
+
+.row {
+  display: block;
+  font-size: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 20px;
+  border: 5px solid #dcdcdc;
+  width: 100px;
+  height: 100px;
+}
+
+#red {background-color: red}
+#blue {background-color: blue}
+#yellow {background-color: yellow}
+#green {background-color: green}
+
+.pressed {
+  box-shadow: 0 0 25px 2.5px #fbfbfb;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.75;
+}

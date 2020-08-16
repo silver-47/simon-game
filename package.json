@@ -1,0 +1,17 @@
+{
+  "name": "simon-game",
+  "version": "1.0.0",
+  "description": "Simon Game by Silver",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon",
+    "start": "node server.js"
+  },
+  "author": "Silver",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1"
+  }
+}

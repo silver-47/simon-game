@@ -1,0 +1,184 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@font-face {
+  font-family: "Karma Future";
+  src: url("/assets/fonts/karma-future.ttf") format("truetype"),
+       url("/assets/fonts/karma-future.otf") format("opentype");
+  font-display: swap;
+}
+
+.heading {
+  display: block;
+  margin: 35px auto 75px;
+  color: #3e3e3e;
+  text-align: center;
+  font-family: "Karma Future", cursive, serif;
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  padding: 2.5px 0;
+  background: #252525;
+  color: white;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Play', sans-serif;
+  font-size: 12px;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ffd31d 50%, #d63447 50%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  right: -50%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+#getName {
+  display: block;
+  width: 300px;
+  margin: 30px auto;
+  padding: 2.5rem 0;
+  border: 5px solid #252525;
+  border-radius: 25px;
+  background-color: rgba(255,255,255,60%);
+  text-align: center;
+}
+
+#getName input {
+  display: block;
+  width: 70%;
+  margin: 0 auto 1rem;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 3.5px solid #555;
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#getName input:focus {
+  width: 80%;
+  line-height: 2;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 3.5px solid #252525;
+}
+
+::placeholder {
+  color: #555;
+  opacity: 0.75;
+}
+
+#getName button {
+  display: block;
+  margin: 0 auto;
+  padding: 12px 2px 12px 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 10px;
+  background-color: #555;
+  color: #ccc;
+  box-shadow: 0 7.5px #888;
+}
+
+#getName button:hover {
+  background: #444;
+}
+
+#getName button:active {
+  background-color: #333;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.leaderboard-container {
+  text-align: center;
+  font-size: 0;
+  margin: 0 auto 5px;
+}
+
+.leaderboard-heading {
+  margin: 0 auto 25px;
+  font-family: 'Lobster', cursive, serif;
+  letter-spacing: 2.5px;
+  text-shadow: 0 0 7.5px black;
+  font-size: 30px;
+  color: white;
+}
+
+.card {
+  display: inline-block;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+  width: 100px;
+  background-color: rgba(75,75,75,75%);
+  margin: 0 5px;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 24px 36px rgba(0,0,0,0.11), 0 24px 46px rgba(25, 25, 25, 0.48);
+}
+
+.card:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0,0,0,0.11), 0 15px 24px rgba(25, 25, 25, 0.48);
+}
+
+.card h1,h2,h3 {
+  color: #eee;
+  font-size: 25px;
+  margin: 0 0 15px;
+}
+
+.card h2 {
+  font-size: 20px;
+}
+
+.card h3 {
+  margin-bottom: 0;
+}
