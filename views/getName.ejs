@@ -14,11 +14,11 @@
     </form>
     <div class="leaderboard-container">
       <h1 class="leaderboard-heading">Leaderboard</h1>
-      <% leaders.map(({name, score}, id) => { %>
+      <% leaders.map(({name, highScore}, id) => { %>
         <div class="card">
           <h1>#<%= id+1 %></h1>
           <h2><%= name %></h2>
-          <h3><%= score %></h3>
+          <h3><%= highScore %></h3>
         </div>
       <% }); %>
     </div>
