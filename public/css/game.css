@@ -46,8 +46,11 @@ footer {
 }
 
 .game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
-  text-align: center;
   margin: 0;
 }
 
@@ -66,7 +69,7 @@ footer {
 
 .game button {
   display: block;
-  margin: 10px auto;
+  margin: 5px auto 0;
   padding: 7.5px 15px;
   background: transparent;
   border: 5px inset white;
@@ -105,4 +108,55 @@ footer {
 .game-over {
   background-color: red;
   opacity: 0.75;
+}
+
+h4 {
+  display: block;
+  margin: 10px auto 0;
+  font-family: 'Play', sans-serif;
+  border-bottom: 2px solid currentColor;
+  color: Aqua;
+}
+
+.rules {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+  margin: 40px auto 0;
+  padding: 25px;
+  background-color: rgba(255,255,255,60%);
+  border: 2.5px solid white;
+  border-radius: 25px;
+  font-size: 0;
+}
+
+.rules h1 {
+  margin: 0 auto;
+  padding: 0 25%;
+  border-bottom: 2.5px solid currentColor;
+  font-family: 'Acme', cursive;
+  font-size: 45px;
+}
+
+.rules p {
+  margin: 15px auto;
+  font-family: 'Play', sans-serif;
+  font-size: 15px;
+}
+
+.rules button {
+  padding: 10px 25px;
+  outline: none;
+  border: 2.5px solid white;
+  font-family: 'Play', sans-serif;
+  font-size: 20px;
+  color: #FFFFFF;
+  background-color: #2f2f2f;
+}
+
+.rules button:active {
+  position:relative;
+  top: 2.5px;
 }

@@ -4,6 +4,16 @@ let userPattern = [];
 let started = false;
 let level = 0;
 
+$(".game h4").click(function() {
+  $(".rules").show();
+  $(".game").hide();
+});
+
+$(".rules button").click(function() {
+  $(".rules").hide();
+  $(".game").show();
+});
+
 $(".btn").click(function() {
   if (!started) {
     $(".game h1").hide();

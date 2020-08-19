@@ -5,9 +5,27 @@
   <body>
     <noscript>You need to enable JavaScript to run this app</noscript>
     <h1 class="heading">Simon Game</h1>
+    <div class="rules" style="display: none;">
+      <h1>Rules</h1>
+      <p>
+        After you Start the Game...<br>
+        <br>Suppose, On <b>Level 1</b> <span style="color: red;">Red</span> is shown.<br>
+        Press <span style="color: red;">Red</span>.<br>
+        Then, On <b>Level 2</b> <span style="color: yellow;">Yellow</span> is shown.<br>
+        Press <span style="color: red;">Red</span> <span style="color: yellow;">Yellow</span>.<br>
+        Then, On <b>Level 3</b> <span style="color: blue;">Blue</span> is shown.<br>
+        Press <span style="color: red;">Red</span> <span style="color: yellow;">Yellow</span> <span style="color: blue;">Blue</span>.<br>
+        Continue like this...<br>
+        <br>The game is all about Memory.<br>
+        The Longest Chain you Remember is your Highscore.<br>
+        <br><b>Get onto the Leaderboard.<br>
+        Beat 'em All !!!</b>
+      </p>
+      <button>OK</button>
+    </div>
     <div class="game">
       <h1>Hi, <%= name %></h1>
-      <h3 id="level-title">Press Any Color to Start...</h3>
+      <h2 id="level-title">Press Any Color to Start...</h2>
       <div class="row">
         <div id="green" class="btn"></div>
         <div id="red" class="btn"></div>
@@ -17,6 +35,7 @@
         <div id="blue" class="btn"></div>
       </div>
       <button onclick="location.reload()">Restart</button>
+      <h4>Game Rules</h4>
     </div>
     <footer>© Silver <%= new Date().getFullYear() %></footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
